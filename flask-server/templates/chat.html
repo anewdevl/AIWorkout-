@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot UI</title>
+  <link rel="stylesheet" type="text/css" href="css/styles1.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="img/logo1.png">
+    </a>
+    <ul class="navlist">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Membership</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="right-content">
+      <a href="#" class="nav-btn">Sign In</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <section class="chatbot-container">
+    <div class="chatbot-ui">
+      <div class="chatbot-header">
+        <h3>Chat with our Assistant</h3>
+      </div>
+      <div class="chatbot-messages">
+        <div class="message user-message">
+          <p>Hello, how can I help you today?</p>
+        </div>
+        <div class="message assistant-message">
+          <p>Hello! I'm an AI assistant. How can I assist you today?</p>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" placeholder="Type your message..." />
+        <button class="send-button"><i class="ri-send-plane-fill"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="hero-img"></div>
+
+  <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
+    <a href="#">
+      <i class="ri-scroll-to-bottom-line"></i> Scroll Down
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 1,
+    });
+  </script>
+</body>
+</html>
